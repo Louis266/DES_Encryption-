@@ -2,26 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DES_Encryption</title>
+    <title>Encode</title>
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/mdb.min.css">
     <link rel="stylesheet" href="static/css/style.min.css">
     <style type="text/css">
-        #intro,#decode,#encode{
+        main{
             margin-top: 100px;
         }
-        #encode,#decode{
-            display: none;
-        }
-
     </style>
 </head>
-
-
 <body>
-
 <header>
-
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue scrolling-navbar">
         <a class="navbar-brand" href="#"><strong>DES Encryption</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -30,26 +22,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
+                <li class="nav-item">
                     <a class="nav-link" href="decode.html">Decode</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="encode.html">Encode</a>
-                </li>>
+                    <a class="nav-link" href="#">Encode</a>
+                </li>
             </ul>
         </div>
     </nav>
 
 </header>
 
-<div class="container" id="intro">
+<main>
 
-</div>
-
-
-
-
-
+    <div class="container" id="encode">
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Input text for encode</label>
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </div>
+        <button type="button" class="btn btn-light-blue waves-effect">Encode</button>
+    </div>
+</main>
 <!--Main Navigation-->
 <!-- SCRIPTS -->
 <!-- JQuery -->
@@ -60,7 +54,5 @@
 <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="static/js/mdb.min.js"></script>
-
-<script type="text/javascript" src="des.js"></script>
 </body>
 </html>
