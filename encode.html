@@ -15,7 +15,7 @@
 <body>
 <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue scrolling-navbar">
-        <a class="navbar-brand" href="#"><strong>DES Encryption</strong></a>
+        <a class="navbar-brand" href="main.html"><strong>DES Encryption</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,8 +38,10 @@
 
     <div class="container" id="encode">
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">Input text for encode</label>
-            <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
+            <label for="input_text">Input text for encode</label>
+            <textarea class="form-control rounded-0" id="input_text" style="border: 1px solid #00b0ff" rows="10"></textarea>
+            <label for="input_key">Input Key</label>
+            <textarea class="form-control rounded-1" id="input_key" style="border: 1px solid #00b0ff" rows="1"></textarea>
         </div>
         <button type="button" class="btn btn-light-blue waves-effect">Encode</button>
     </div>
@@ -54,5 +56,6 @@
 <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="static/js/mdb.min.js"></script>
+<script type="text/javascript" src="encode.js"></script>
 </body>
 </html>

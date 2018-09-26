@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="static/css/mdb.min.css">
     <link rel="stylesheet" href="static/css/style.min.css">
     <style type="text/css">
-        #intro,#decode,#encode{
+        #intro{
             margin-top: 100px;
-        }
-        #encode,#decode{
-            display: none;
+            padding: 20px;
+            border: #00b0ff solid 5px;
+            font-size: 25px;
         }
 
     </style>
@@ -35,7 +35,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="encode.html">Encode</a>
-                </li>>
+                </li>
             </ul>
         </div>
     </nav>
@@ -44,10 +44,16 @@
 
 <div class="container" id="intro">
 
+    The Data Encryption Standard is a symmetric-key algorithm for the encryption of electronic data. Although insecure,
+    it was highly influential in the advancement of modern cryptography.
+
+    Developed in the early 1970s at IBM and based on an earlier design by Horst Feistel, the algorithm was submitted to
+    the National Bureau of Standards (NBS) following the agency's invitation to propose a candidate for the protection
+    of sensitive, unclassified electronic government data. In 1976, after consultation with the National Security Agency
+    (NSA), the NBS eventually selected a slightly modified version (strengthened against differential cryptanalysis, but
+    weakened against brute-force attacks), which was published as an official Federal Information Processing Standard
+    (FIPS) for the United States in 1977.
 </div>
-
-
-
 
 
 <!--Main Navigation-->
@@ -61,6 +67,6 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="static/js/mdb.min.js"></script>
 
-<script type="text/javascript" src="des.js"></script>
+<script type="text/javascript" src="decode.js"></script>
 </body>
 </html>
